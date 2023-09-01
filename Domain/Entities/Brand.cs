@@ -13,7 +13,6 @@ public class Brand : Entity<Guid>
 
     public Brand()
     {
-
     }
 
     public Brand(Guid id, string name)
