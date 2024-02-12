@@ -1,4 +1,4 @@
-﻿using Core.Application.Pipelines.Transcation;
+﻿//using Core.Application.Pipelines.Transcation;
 using Core.Application.Pipelines.Validation;
 using Core.Application.Rules;
 using FluentValidation;
@@ -22,7 +22,7 @@ public static class ApplicationServiceRegistration
             configuration.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
 
             configuration.AddOpenBehavior(typeof(RequestValidationBehavior<,>));
-            configuration.AddOpenBehavior(typeof(TransactionScopeBehavior<,>));
+            //configuration.AddOpenBehavior(typeof(TransactionScopeBehavior<,>));
         });
 
         return services;
